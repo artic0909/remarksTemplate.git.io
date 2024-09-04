@@ -30,7 +30,7 @@
   right: 16px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: right center;
-  background-color: rgb(21, 21, 65) !important;
+  /* background-color: rgb(21, 21, 65) !important; */
   color: white !important;
   padding: 10px 20px;
   text-align: center;
@@ -40,13 +40,19 @@
   border-radius: 5px 5px 0 0;
   z-index: 1000;
   transition: background-color 0.3s;
+  animation: blink1 200ms infinite alternate;
 }
-
+@keyframes blink1 {
+  0% {
+    background-color: rgb(21, 21, 65);
+  }
+  100% {
+    background-color: rgb(209, 53, 69);
+  }
+}
 .floating-btn:hover {
   background-color: rgb(209, 53, 69) !important;
 }
-
-/* ======================floating btn end========================= */
 
 /*========================================= cards start==============================================*/
 
@@ -492,3 +498,16 @@ a:hover {
   justify-content: space-between;
 }
 /* footer */
+
+
+
+
+
+/* header */
+.our_s_heading {
+  font-size: 2.6rem;
+}
+.img_main img{
+  width: 100px;
+}
+/* header */
